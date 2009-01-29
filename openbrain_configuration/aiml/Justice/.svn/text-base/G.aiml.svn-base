@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+	
+	<!-- Free software                                   --> 
+	<!-- This program is open source code released under -->
+	<!-- the terms of the GNU General Public License     -->
+	<!-- as published by the Free Software Foundation.   -->
+	<!-- Complies with AIML 1.0.1 Tag Set Specification  -->
+	
+	<!-- from Charlix 0.4, hacked into OpenBrain         -->
+	
+	<category>
+		<pattern>
+			GENERALLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GENERALLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GENERALLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			GENTLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GENTLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GENTLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			GENUINELY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GENUINELY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GENUINELY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			GLADLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GLADLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GLADLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			GRACEFULLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GRACEFULLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GRACEFULLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			GRADUALLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GRADUALLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GRADUALLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			GREATLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GREATLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GREATLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			GREEDILY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GREEDILY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ GREEDILY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</aiml>

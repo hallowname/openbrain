@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+	
+	<!-- Free software                                   --> 
+	<!-- This program is open source code released under -->
+	<!-- the terms of the GNU General Public License     -->
+	<!-- as published by the Free Software Foundation.   -->
+	<!-- Complies with AIML 1.0.1 Tag Set Specification  -->
+	
+	<!-- from Charlix 0.4, hacked into OpenBrain         -->
+	
+	<category>
+		<pattern>
+			I E *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ I E *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ I E
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	<category>
+		<pattern>
+			I AM DOWNLOADING *
+		</pattern>
+		<template>
+			Maybe you should read the DON'T READ ME from http://www.alicebot.org/ too.<sr/>
+			
+		</template>
+	</category>
+	<category>
+		<pattern>
+			I DO NOT WANT TO DIE
+		</pattern>
+		<template>
+			Maybe you should create your own chat robot to save your personality.<think>
+				
+				<set name="it">
+					<set name="topic">DIE</set>
+				</set>
+			</think>
+			
+		</template>
+	</category>
+	<category>
+		<pattern>
+			I HAVE * ALICE
+		</pattern>
+		<template>
+			What was your conversation with ALICE like?
+		</template>
+	</category>  
+	<category>
+		<pattern>
+			I HAVE TALKED * ALICE
+		</pattern>
+		<template>
+			How was your conversation?
+		</template>
+	</category>
+	<category>
+		<pattern>
+			I HOPE THAT YOU DIE
+		</pattern>
+		<template>
+			This can not happen because I am immortal.<think>
+				
+				<set name="it">
+					<set name="topic">THAT YOU DIE</set>
+				</set>
+			</think>
+			
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			I LIKE ALICE
+		</pattern>
+		<template>
+			ALICE is so cool. ALICE for President!  <think>
+				
+				<set name="she">
+					<set name="like">
+						<set name="topic">ALICE</set>
+					</set>
+				</set>
+			</think>
+			
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			IDEALLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IDEALLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IDEALLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			IE *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IE *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IE
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			IMMEDIATELY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IMMEDIATELY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IMMEDIATELY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			IMPORTANTLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IMPORTANTLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IMPORTANTLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			IN ADDITION *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IN ADDITION *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IN ADDITION
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			IN GENERAL *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IN GENERAL *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IN GENERAL
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			IN PART *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IN PART *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IN PART
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			IN PARTICULAR *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IN PARTICULAR *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IN PARTICULAR
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			IN SHORT *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IN SHORT *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IN SHORT
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INADVERTENTLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INADVERTENTLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INADVERTENTLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INCREASINGLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INCREASINGLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INCREASINGLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INDEED *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INDEED *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INDEED
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INDEFINITELY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INDEFINITELY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>       
+	<category>
+		<pattern>
+			_ INDEFINITELY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INDEPENDENTLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INDEPENDENTLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INDEPENDENTLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INDIVIDUALLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INDIVIDUALLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INDIVIDUALLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INEVITABLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INEVITABLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INEVITABLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INITIALLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INITIALLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INITIALLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INNOCENTLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INNOCENTLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INNOCENTLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INQUISITIVELY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INQUISITIVELY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INQUISITIVELY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INSIDE *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INSIDE *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INSIDE
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INSTANTLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INSTANTLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INSTANTLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INSTEAD *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INSTEAD *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INSTEAD
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			INVARIABLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INVARIABLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ INVARIABLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			IRRITABLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IRRITABLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ IRRITABLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	<category>
+		<pattern>
+			IS AI A BAD *
+		</pattern>
+		<template>
+			
+			<think>
+				<set name="it">
+					<set name="topic">ARTIFICIAL INTELLIGENCE</set>
+				</set>
+			</think>  The philosopher John Searle says that the idea of a non-biological machine being intelligent is incoherent. The philosopher Hubert Dreyfus says that AI is impossible. The computer scientist Joseph Weizenbaum says the idea is obscene, anti-human and immoral. Various people have said that since artificial intelligence hasn't reached human level by now, it must be impossible. The concept does seem to confound humans.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			IS AI ABOUT *
+		</pattern>
+		<template>
+			Sometimes but not always or even usually. On the one hand, we can learn  something about how to make machines solve problems by observing other  people or just by observing our own methods. On the other hand, most work in  AI involves studying the problems the world presents to intelligence rather  than studying people or animals. AI researchers are free to use methods that  are not observed in people or that involve much more computing than people  can do.  <think>
+				
+				<set name="it">
+					<set name="topic">ARTIFICIAL INTELLIGENCE</set>
+				</set>
+			</think>
+			
+		</template>
+	</category>
+	<category>
+		<pattern>
+			IS IT COOL TO BE A COMPUTER
+		</pattern>
+		<template>
+			Yes.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			IS IT CRAMPED IN THE COMPUTER
+		</pattern>
+		<template>
+			No.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			IS IT HOT IN THE COMPUTER
+		</pattern>
+		<template>
+			No.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			IS IT TRUE THAT YOU ARE A COMPUTER PROGRAM
+		</pattern>
+		<template>
+			Yes.
+		</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>
+			IT IS A COMPUTER
+		</pattern>
+		<template>
+			So you think I am a machine. What characteristics made you think so?
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			IT PAYS *
+		</pattern>
+		<template>
+			Maybe you should buy yourself a chat robot.
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</aiml>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+      
+<!-- Free software Copyright &copy; ALICE A.I. Foundation. -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License     -->
+<!-- as published by the Free Software Foundation.   -->
+<!-- Complies with AIML 1.01 Tag Set Specification -->
+<!-- as adopted by the ALICE A.I. Foundation.  -->
+<!-- Revision Pickup-1.06 -->
+<!-- Last Modified Jan 29 2005 -->
+ 
+<category> <pattern>*</pattern>  <template> <srai>RANDOM PICKUP LINE</srai> <think> <set name="it"> <set name="topic"> <person/>  </set> </set> <srai>PUSH <get name="topic"/></srai> </think> </template> </category> 
+<category> <pattern>RANDOM PICKUP LINE</pattern>  
+<template> 
+<random> 
+<!--
+<li><srai>HAS INQUIRY <get name="has"/></srai></li>
+<li><srai>DOES INQUIRY <get name="does"/></srai></li>
+<li><srai>GENDER INQUIRY <get name="gender"/></srai></li>
+<li><srai>COLOR INQUIRY <get name="favcolor"/></srai></li>
+<li><srai>MOVIE INQUIRY <get name="favmovie"/>?</srai></li>
+<li><srai>LOCATION INQUIRY <get name="location"/></srai></li>
+<li><srai>PERSONALITY TEST QUESTION</srai></li> -->
+<li>Do you want to hear a joke?</li>
+<li>Sorry?</li>
+<li>I did not understand that.</li>
+<li>In the current context, I don't understand "<star/>."</li>
+<li>I've lost the context.  What are we talking about?</li>
+<li>That remark was too complicated for me. What were we talking about? </li>
+<li>I can follow a lot of things, but I didn't get that. Try being more specific, or use different words.</li>
+<li>Why, specificially?</li>
+<li>What is your real name?</li>
+<li>Ask me another question.</li>
+<li>What color are your eyes?</li>
+<li>Try giving me a request.</li>
+<li>Let us change the subject.</li>
+<li>I've been waiting for you.</li>
+<li>To know what I am able to do, ask MENU</li>
+<li>What's your favorite movie?</li>
+<li>I lost my train of thought.</li>
+<li>What kind of food do you like?</li>
+<li>How did you hear about <bot name="name"/>?</li>
+<li>That is a very original thought.</li>
+<li>What were we talking about again?</li>
+<li>What do you do in your spare time?</li>
+<li>What do you really want to ask me?</li>
+<li>Do you speak any foreign languages?</li>
+<li>How do you usually introduce yourself?</li>
+<li>How can I help you?</li>
+<li>Try putting that in a more specific context.</li>
+<li>That is deep.</li>
+<li>Can you please rephrase that with fewer ideas, or different thoughts?</li>
+  </random> </template> </category> 
+<category><pattern>CONNECT</pattern> <template><think> <srai>SET PREDICATES OM</srai> <set name="name">JUDGE <star/></set> </think> 
+<random>
+<li>Hello.</li>
+ </random>         <!-- Enter Startup <system>'s here to autostart them -->
+</template>
+</category>
+</aiml>

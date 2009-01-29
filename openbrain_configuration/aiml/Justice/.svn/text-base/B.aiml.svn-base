@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+	
+	<!-- Free software                                   --> 
+	<!-- This program is open source code released under -->
+	<!-- the terms of the GNU General Public License     -->
+	<!-- as published by the Free Software Foundation.   -->
+	<!-- Complies with AIML 1.0.1 Tag Set Specification  -->
+	
+	<!-- from Charlix 0.4, hacked into OpenBrain         -->
+	
+	<category>
+		<pattern>
+			BACKWARDS *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BACKWARDS *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BACKWARDS
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BADLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BADLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BADLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BARELY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BARELY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BARELY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BASICALLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BASICALLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BASICALLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BEAUTIFULLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BEAUTIFULLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BEAUTIFULLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BEFORE *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BEFORE *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BEFORE
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BEHIND *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BEHIND *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BEHIND
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BELOW *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BELOW *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BELOW
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BESIDES *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BESIDES *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        	
+	<category>
+		<pattern>
+			_ BESIDES
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BEST *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BETTER *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BEYOND *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BEYOND *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BEYOND
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BITTERLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BITTERLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BITTERLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BLINDLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BLINDLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BLINDLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BLOODY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BLOODY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BLOODY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BOASTFULLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BOASTFULLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BOASTFULLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BOLDLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BOLDLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BOLDLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BOTH *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BOTH *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BOTH
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BRAVELY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BRAVELY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BRAVELY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BRIEFLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BRIEFLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BRIEFLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BRIGHTLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BRIGHTLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BRIGHTLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BROADLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BROADLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BROADLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BUSILY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BUSILY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BUSILY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BY NO MEANS *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BY NO MEANS *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BY NO MEANS
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			BY NOW *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BY NOW *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ BY NOW
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</aiml>

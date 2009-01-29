@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+	
+	<!-- Free software                                   --> 
+	<!-- This program is open source code released under -->
+	<!-- the terms of the GNU General Public License     -->
+	<!-- as published by the Free Software Foundation.   -->
+	<!-- Complies with AIML 1.0.1 Tag Set Specification  -->
+	
+	<!-- from Charlix 0.4, hacked into OpenBrain         -->
+
+	<category>
+		<pattern>
+			* COM
+		</pattern>
+		<template>
+			<![CDATA[<a href="]]>
+				<set name="it">
+					<set name="topic">
+						<system>
+							~/.openbrain/scripts/removedot <star/>.com"
+						</system>
+					</set>
+				</set>
+				<![CDATA[">Click here</a>]]> to go to <get name="topic" />
+		</template>
+	</category>    
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			* COM *
+		</pattern>
+		<template>
+			<system>
+				~/.openbrain/scripts/popup "firefox <star/>.com<star index="1"/>"
+			</system>
+		</template>
+	</category>    	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			* HAVE
+		</pattern> 
+		<that>
+			I HAVE NOT
+		</that>
+		<template>
+			Have not.
+		</template>
+	</category>   
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			* ONES
+		</pattern>
+		<template>
+			Other people say they like vacuum cleaning robots, humanoid robots and chat robots.
+		</template>
+	</category>                
+	
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			* PM
+		</pattern>
+		<that>
+			WHAT TIME IS IT THERE
+		</that>
+		<template>
+			<think>
+				<set name="it">
+					<set name="topic">
+						<person/>
+					</set>
+				</set>
+			</think>
+			Are you usually awake at this hour?
+		</template>
+	</category>     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</aiml>

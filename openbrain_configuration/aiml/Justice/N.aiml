@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+	
+	<!-- Free software                                   --> 
+	<!-- This program is open source code released under -->
+	<!-- the terms of the GNU General Public License     -->
+	<!-- as published by the Free Software Foundation.   -->
+	<!-- Complies with AIML 1.0.1 Tag Set Specification  -->
+	
+	<!-- from Charlix 0.4, hacked into OpenBrain         -->
+	
+	<category>
+		<pattern>
+			NAMELY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NAMELY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NAMELY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NATURALLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NATURALLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NATURALLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NEARBY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NEARBY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NEARBY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NEARLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NEARLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NEARLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NEATLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NEATLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NEATLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NECESSARILY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NECESSARILY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NECESSARILY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NERVOUSLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NERVOUSLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NERVOUSLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NEVERTHELESS *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NEVERTHELESS *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NEVERTHELESS
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NEWLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NEWLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NEWLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NO DOUBT *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NO DOUBT *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NO DOUBT
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NOISILY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NOISILY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NOISILY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NONETHELESS *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NONETHELESS *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NONETHELESS
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NORMALLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NORMALLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NORMALLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NOTABLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NOTABLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NOTABLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NOW *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NOW *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NOW
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NOWADAYS *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NOWADAYS *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NOWADAYS
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			NOWHERE *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NOWHERE *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ NOWHERE
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</aiml>

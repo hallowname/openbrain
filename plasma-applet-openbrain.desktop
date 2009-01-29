@@ -1,0 +1,19 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=OpenBrain
+Comment=A Desktop Assistant
+Type=Service
+Icon=preferences-desktop-user
+ServiceTypes=Plasma/Applet
+X-Plasma-DropMimeTypes=text/html
+
+X-KDE-Library=plasma_applet_openbrain
+X-KDE-PluginInfo-Author=Drake Justice
+X-KDE-PluginInfo-Email=hallowname@gmail.com
+X-KDE-PluginInfo-Name=openbrain
+X-KDE-PluginInfo-Version=0.0.2.6
+X-KDE-PluginInfo-Website=http://openbrain.sf.net
+X-KDE-PluginInfo-Category=Miscellaneous
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPLv3+
+X-KDE-PluginInfo-EnabledByDefault=true
