@@ -1,0 +1,11 @@
+bugs
+----
+
+8 - takes way too long to load
+7 - config gui has no options
+6 - nonconforming aiml
+5 - teach support not implemented
+4 - non w3c compliant
+3 - no successful <a> tag without <!CDATA wrap yet... :(
+2*- cant type '?' without initiating repeats of the same category... - fixd 2/6/09
+1*- still needs a separate qthread - fixd 2/6/09

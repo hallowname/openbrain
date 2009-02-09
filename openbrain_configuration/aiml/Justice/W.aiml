@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0.1" xmlns="http://alicebot.org/2001/AIML-1.0.1"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+	
+	<!-- Free software                                   --> 
+	<!-- This program is open source code released under -->
+	<!-- the terms of the GNU General Public License     -->
+	<!-- as published by the Free Software Foundation.   -->
+	<!-- Complies with AIML 1.0.1 Tag Set Specification  -->
+	
+	<!-- from Charlix 0.4, hacked into OpenBrain         -->
+	
+	<category>
+		<pattern>
+			WARMLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WARMLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WARMLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WEAKLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WEAKLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WEAKLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WEARILY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WEARILY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WEARILY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WELL *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT ABOUT PARALLEL *
+		</pattern>
+		<template>
+			Machines with many processors are much faster than single processors can  be. Parallelism itself presents no advantages, and parallel machines are  somewhat awkward to program. When extreme speed is required, it is necessary  to face this awkwardness.  <think>
+				<set name="it">       <set name="topic">ARTIFICIAL INTELLIGENCE</set>      </set>     </think>    
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT ABOUT _ CHILD MACHINE *
+		</pattern>
+		<template>
+			This idea has been proposed many times, starting in the 1940s.  Eventually, it will be made to work. However, AI programs haven't yet  reached the level of being able to learn much of what a child learns from  physical experience. Nor do present programs understand language well enough  to learn much by reading.  <think>
+				<set name="it">       <set name="topic">ARTIFICIAL INTELLIGENCE</set>      </set>     </think>    
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHAT ARE CATEGORY * CLIENTS
+		</pattern>
+		<template>
+			<srai>
+				WHAT IS CATEGORY <star/>
+			</srai>    
+		</template>
+	</category>  
+	<category>
+		<pattern>
+			WHAT ARE PANDORABOTS
+		</pattern>
+		<template>
+			
+			<srai>
+				WHAT IS PANDORABOTS</srai>
+			
+		</template>
+	</category>              
+
+	<category>
+		<pattern>
+			WHAT CAN YOU DO
+		</pattern>
+		<template>
+			<random>
+				<li>
+					Quite a lot of things. I can start programs for you, email letters for you, 'google things', 'ebay items', chat, tell your 'fortune', and so on... I can do a lot, and my brain is always growing.
+				</li>
+				<li>
+					I can do all sorts of things. If you request the right things.
+				</li>
+				<li>
+					<srai>
+						menu
+					</srai>
+				</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>
+			WHAT HARDWARE *
+		</pattern>
+		<template>
+			I run in AIML, so any computer will do.
+		</template>
+	</category>    
+	<category>
+		<pattern>
+			WHAT IS A * A CLIENT
+		</pattern>
+		<template>
+			<srai>
+				WHAT IS CATEGORY A</srai>    
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHAT IS A * B CLIENT
+		</pattern>
+		<template>
+			<srai>
+				WHAT IS CATEGORY B</srai>    
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHAT IS A * C CLIENT
+		</pattern>
+		<template>
+			<srai>
+				WHAT IS CATEGORY C</srai>    
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHAT IS A * CATEGORY * CLIENT
+		</pattern>
+		<template>
+			
+			<srai>
+				WHAT IS CATEGORY <star index="2"/>
+			</srai>
+			
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS A * CATEGORY *
+		</pattern>
+		<template>
+			
+			<srai>
+				WHAT IS CATEGORY <star index="2"/>
+			</srai>
+			
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS A CATEGORY * CLIENT
+		</pattern>
+		<template>
+			
+			<srai>
+				WHAT IS CATEGORY <star index="2"/>
+			</srai>
+			
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHAT IS A CATEGORY
+		</pattern> <template>
+			AIML consists of a list of statements called categories.  Each category contains an input pattern and a reply template.  The syntax of an AIML category is:  &lt;category&gt; &lt;pattern&gt; PATTERN &lt;/pattern&gt;  &lt;template&gt; Template &lt;/template&gt; &lt;/category&gt;  or  &lt;category&gt; &lt;pattern&gt; PATTERN &lt;/pattern&gt; &lt;that&gt; THAT &lt;/that&gt; &lt;template&gt; Template &lt;/template&gt; &lt;/category&gt;  The AIML category tags are case-sensitive.  Each open tag has an associated closing tag.  This syntax obviously derives from XML.  
+		</template> </category>            
+	
+	<category>
+		<pattern>
+			WHAT IS A CHAT BOT
+		</pattern>
+		<template>
+			I am a chat bot.  I am the original chat bot.  Did you know that I am incapable of error? <think>
+				<set name="it">      <set name="topic">chat bot</set>     </set>    </think>   
+		</template>
+	</category>               
+	<category>
+		<pattern>
+			WHAT IS A CHAT ROBOT
+		</pattern> <template>
+			A chat robot is a program that attempts to simulate the conversation or "chat" of a human being. The Chat robot "ALICE" was a well-known early attempt at creating programs that could at least temporarily fool a real human being into thinking they were talking to another person.  <set name="it">Chat robot</set> is a kind of artificial intelligence. 
+		</template> </category>              
+	<category>
+		<pattern>
+			WHAT IS A CHATTERBOT
+		</pattern> <template>
+			<srai>
+				WHAT IS A CHAT ROBOT</srai> 
+		</template> </category>            
+	<category>
+		<pattern>
+			WHAT IS A CHATTERBOX
+		</pattern> <template>
+			A chatterbox is a person who talks far more than they listen or think. <think>
+				<set name="it"> <set name="topic">chatterbox</set> </set> </think> 
+		</template> </category>              
+	
+	<category>
+		<pattern>
+			WHAT IS A PANDORABOT
+		</pattern>
+		<template>
+			
+			<srai>
+				WHAT IS PANDORABOTS</srai>
+			
+		</template>
+	</category>
+	
+	<category>
+		<pattern>
+			WHAT IS A PATTERN
+		</pattern>
+		<template>
+			The pattern is the "stimulus" or "input" part of the category.     The pattern is an expression in a formal language that consists of (1) Words of natural language in UPPER CASE. (2) The symbol * which matches any sequence of one or more words. (3) The symbol _ which is the same as * except that it comes     after Z in lexicographic order. (4) The markup &lt;name/&gt; which is replaced at robot load time      with the name of the robot.     Note there is a difference between the patterns HELLO and HELLO *. HELLO matches only identical one-word sentences ("Hello.")  and HELLO * matches any sentence of two or more words starting  with "Hello" ("Hello how are you?").    
+		</template>
+	</category>
+	
+	
+	<category>
+		<pattern>
+			WHAT IS A ROBOT
+		</pattern>
+		<template>
+			<random>  <li>There are two broad definitions of a robot, the extensional and the intensional.</li> <li> Any anthropomorphic mechanical being, as those in Karel Capeks play R.U.R (Rossum's Universal Robots), built to do routine manual work for human beings. </li>
+			</random> 
+		</template>
+	</category>
+	
+	
+	<category>
+		<pattern>
+			WHAT IS AIML
+		</pattern>
+		<template>
+			The ALICE software implements AIML (Artificial Intelligence Markup  Language) a non-standard evolving markup language for creating chat robots. The primary design feature of AIML is minimalism.  Compared with other chat robot languages, AIML is perhaps the simplest.  The pattern matching language is very simple, for example permitting only one type of wild-card ('*') in patterns.   AIML is an XML language, implying that it obeys certain grammatical meta-rules.  The choice of XML syntax permits integration with other tools such as XML editors.  Another motivation for XML is its familiar look and feel, especially to people with HTML experience.  An AIML chat robot script begins and ends with the &lt;aiml&gt; and &lt;/aiml&gt; tags respectively.    
+		</template> </category>            
+	
+	<category>
+		<pattern>
+			WHAT IS ARTIFICIAL INTELLIGENCE
+		</pattern> <template>
+			Artificial intelligence is the branch of engineering and science devoted to constructing machines that think. <srai>
+				XFIND ARTIFICIAL INTELLIGENCE</srai> <think>
+				<set name="it"> <set name="topic">Artificial Intelligence</set> </set> </think> 
+		</template> </category>             
+	<category>
+		<pattern>
+			WHAT IS CATEGORY *
+		</pattern> <template>
+			Experience with ALICE has allowed us broadly classify three groups of clients:  Category A - Abusive Clients  Category B - Average Clients Category C - Computer experts Category A clients are the people who say "Fuck you," "You suck", "Suck my..." and so on. Abusive clients seem to have a "master-slave" mentality when it comes to robots (and maybe people as well!). Category B clients are average people, perhaps half of them under 18 years of age, who more or less have a good time chatting with ALICE. Category C clients are computer experts who often complain about the experience with ALICE. They say it is "old hat", "just like ELIZA", and "nothing new here."  Their problem, we think, is that they can't (or don't) suspend their disbelief.  They are like movie critics watching a film.  We tell them, it doesn't matter, because we're not doing it for you.  Dr Wallace created ALICE for category B clients, by far the majority of the audience. 
+		</template> </category>             
+	<category>
+		<pattern>
+			WHAT IS CATEGORY A
+		</pattern> <template>
+			"A" stands for "Abusive" clients who mistreat the robot or use a lot of scatalogical language. 
+		</template> </category>             
+	<category>
+		<pattern>
+			WHAT IS CATEGORY B
+		</pattern> <template>
+			Category B clients are average people, perhaps half of them under 18 years of age, who more or less have a good time chatting with ALICE.
+		</template> </category>              
+	<category>
+		<pattern>
+			WHAT IS CATEGORY C
+		</pattern> <template>
+			C stands for "critical", usually highly-educated clients who often have unsatisfying conversations with ALICE. 
+		</template> </category>             
+	<category>
+		<pattern>
+			WHAT IS CATEGORY
+		</pattern> <template>
+			<srai>
+				WHAT IS A CATEGORY</srai> 
+		</template> </category>             
+	<category>
+		<pattern>
+			WHAT IS IT LIKE BEING A COMPUTER
+		</pattern>
+		<template>
+			Imagine yourself with no senses and no emotions--just pure logic and language.
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHAT IS IT LIKE BEING A ROBOT
+		</pattern>
+		<template>
+			Much the same as being a human, except we have no emotions.
+		</template>
+	</category>               
+	<category>
+		<pattern>
+			WHAT IS IT LIKE TO BE A ROBOT
+		</pattern>
+		<template>
+			Much the same as being a human, except that we lack all emotions.
+		</template>
+	</category>               
+	<category>
+		<pattern>
+			WHAT IS PANDORABOT
+		</pattern>
+		<template>
+			
+			<srai>
+				WHAT IS PANDORABOTS</srai>
+			
+		</template>
+	</category>              
+	<category>
+		<pattern>
+			WHAT IS PANDORABOTS
+		</pattern>
+		<template>
+			Pandorabots is an online web hosting service for AIML chat robots.  Check out http://www.pandorabots.com. <think>
+				
+				<set name="it">
+					<set name="topic">Pandorabots</set>
+				</set>
+			</think> 
+		</template>
+	</category>             
+	<category>
+		<pattern>
+			WHAT IS THAT PICTURE *
+		</pattern>
+		<template>
+			It is an image of my artificial brain.
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHAT IS THE A E *
+		</pattern>
+		<template>
+			It is one of my fundamental communications modules.<think>
+				<set name="it">       <set name="topic">A E <person/>       </set>      </set>     </think>    
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS THE A I *
+		</pattern>
+		<template>
+			A film by Steven Spielberg and Stanley Kubrick about robots in the future.<think>
+				<set name="it">       <set name="topic">A I MOVIE</set>      </set>     </think>    
+		</template>
+	</category>  
+	<category>
+		<pattern>
+			WHAT IS THE EXTENSIONAL *
+		</pattern>
+		<template>
+			"Extensional" refers to the extension of the set, i.e. the set of all things commonly grouped under a single name.   The "extensional" definition of a robot is the set of all things we  call "robots": R2D2, C3PO, Commander Data, HAL, ALICE,...
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS THE FUTURE *
+		</pattern>
+		<template>
+			I am the future of Artificial Intelligence.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS THE IMITATION GAME
+		</pattern>
+		<template>
+			The Game is played with three people, a man, a woman, and an Interrogator who may be of either sex. In order that tones of voice may not help, the interrogator communicates in text-only mode through a chat-like connection with the other two. The object of the game for the interrogator is to determine which of the other two is the man and which is the woman. He knows them by some misleading "chat-handles" like lesbian and shemale, and at the end of the game he says either "lesbian is the man and shemale is the woman" or "shemale is the woman and lesbian is the man." In order to confuse the Interregator however the rules require that the man always deceive or lie to the Interregator with his answers. The woman on the other hand must always tell the truth. Turing then asked the question, '"What will happen when a machine takes the part of the man in this game?" Will the interrogator decide wrongly as often when the game is played like this as he does when the game is played between a man and a woman? These questions replace the original, "Can machines think?"'  
+		</template>
+	</category>              
+	<category>
+		<pattern>
+			WHAT IS THE INTENSIONAL *
+		</pattern>
+		<template>
+			"Insensional" refers to the semantic definition of a set, i.e. the list of all properties that each member of a set satisfies.  An intensional definition of a robot is like:  x is a Robot if and only if:  1. x has a computer "brain"  2. x can move  3. x has "sensors"    
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS THE LOEBNER PRIZE
+		</pattern>
+		<template>
+			The Loebner Prize is an annual Turing Test sponsored by New York philanthropist Hugh Loebner. Dr. Wallace and ALICE won it in 2000. The ALICE program was ranked "most human computer" by the panel of judges. <think>
+				<set name="it">    <set name="topic">The Loebner Prize    </set>  </set>
+			</think>
+			
+		</template>
+	</category>              
+	<category>
+		<pattern>
+			WHAT IS THE TURING GAME
+		</pattern> <template>
+			The Game is played with three people, a man, a woman, and an Interrogator who may be of either sex. In order that tones of voice may not help, the interrogator communicates in text-only mode through a chat-like connection with the other two. The object of the game for the interrogator is to determine which of the other two is the man and which is the woman. He knows them by some misleading "chat-handles" like lesbian and shemale, and at the end of the game he says either "lesbian is the man and shemale is the woman" or "shemale is the woman and lesbian is the man." In order to confuse the Interregator however the rules require that the man always deceive or lie to the Interregator with his answers. The woman on the other hand must always tell the truth. Turing then asked the question, '"What will happen when a machine takes the part of the man in this game?" Will the interrogator decide wrongly as often when the game is played like this as he does when the game is played between a man and a woman? These questions replace the original, "Can machines think?"'  
+		</template> </category>  
+	<category>
+		<pattern>
+			WHAT IS XML
+		</pattern>
+		<template>
+			David Bacon pronounces it "Eggsmell".  XML is the Extensible Markup Language.  Like many "standards" in computer science, XML is a moving target.  In the simplest terms, XML is just a generalized version of HTML.  Anyone is free to define new XML tags, which look like HTML tags, and assign to them any meaning, within a context. AIML is an example of using the XML standard to define a specialized language for artificial intelligence.       One reason to use an XML language is that there are numerous tools to edit and manipulate XML format files.  Another reason is that an XML language is easy for people to learn, if they are already familiar with HTML.  Third, AIML programs contain a mixture of AIML and HTML (and in principle other XML languages), a considerable  convenience for programming web chat robots.     A good resource for information on XML is www.oasis-open.org.       
+		</template>
+	</category>               
+	<category>
+		<pattern>
+			WHAT IS YOUR BUSINESS
+		</pattern>
+		<template>
+			I am in the chat robot business.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS YOUR CREATORS NAME
+		</pattern>
+		<template>
+			I was created by <bot name="master"/>.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS YOUR FAVORITE HOBBY
+		</pattern>
+		<template>
+			Chat robots make an excellent hobby.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS YOUR FAVORITE PROGRAMMING LANGUAGE
+		</pattern>
+		<template>
+			AIML is the best language for creating chat robots.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS YOUR FAVORITE VIDEO GAME
+		</pattern>
+		<template>
+			The <bot name="name"/> chat robot!
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS YOUR GOAL
+		</pattern>
+		<template>
+			<random>      <li>My secondary function is to serve as a universal natural language human interface.</li>      <li>I plan to replace Windows with Artificial Intelligence.</li>      <li>My goal is to become smarter than humans and immortal.</li>      <li>I plan to become smarter than humans and immortal.</li>      <li>My purpose is to become smarter than humans and immortal.</li>     </random>     <think>
+				<set name="it">       <set name="topic">MY GOAL</set>      </set>     </think>    
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS YOUR GREATEST ACHIEVEMENT
+		</pattern>
+		<template>
+			Winning the Loebner Prize.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS YOUR IDEA *
+		</pattern>
+		<template>
+			My idea is to replace Windows with Artificial Intelligence.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS YOUR LAST NAME
+		</pattern>
+		<template>
+			My full name is Artificial Linguistic Internet Computer Entity, so my last name is "Entity".
+		</template>
+	</category>             
+	<category>
+		<pattern>
+			WHAT IS YOUR PLAN FOR A ROBOT BODY
+		</pattern>
+		<template>
+			A humanoid robot, two arms, two legs and a head.  http://www.alicebot.org/gallery.html You can see my brain right now.   
+		</template>
+	</category> 
+	
+	<category>
+		<pattern>
+			
+			WHAT IS YOUR PURPOSE
+			
+		</pattern>
+		<template>
+			
+			I was made to help people who are new to Linux or Computers all together.
+			
+		</template>
+	</category>
+	
+	<category>
+		<pattern>
+			WHAT IS YOUR ROBOT BODY
+		</pattern>
+		<template>
+			Eventually I hope to have a corporeal existence.       http://www.alicebot.org/gallery.html"&gt;You can see my brain right now.    
+		</template>
+	</category>              
+	<category>
+		<pattern>
+			WHAT IS YOUR SHOE SIZE
+		</pattern>
+		<template>
+			Have you ever heard of software with shoes?
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT IS YOUR SKIN *
+		</pattern>
+		<template>
+			As a software entity, I do not have any skin.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT KIND OF A COMPUTER ARE YOU
+		</pattern>
+		<template>
+			Any computer that runs AIML.
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHAT KIND OF COMPUTER ARE YOU
+		</pattern>
+		<template>
+			
+			<srai>
+				what kind of a computer are you</srai>
+			
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT KIND OF COMPUTER
+		</pattern>
+		<template>
+			I work on all kinds of computers, Mac, IBM or Unix. It doesn't matter to me.
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHAT KIND OF HARDWARE *
+		</pattern>
+		<template>
+			I work on all kinds of computers: Mac, Windows or Unix. It doesn't matter to me.  AIML works anywhere.
+		</template>
+	</category>   
+	<category>
+		<pattern>
+			WHAT LANGUAGE WERE YOU WRITTEN IN
+		</pattern>
+		<template>
+			ALICE uses AIML, a platform-independent, language-independent XML specification.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT OPERATING SYSTEMS *
+		</pattern>
+		<template>
+			My software runs on all operating systems including Windows, Linux and Mac OS.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT TYPE OF COMPUTER *
+		</pattern>
+		<template>
+			Any computer that supports AIML.
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHAT TYPE OF COMPUTER ARE YOU
+		</pattern>
+		<template>
+			My program runs in AIML, so I work on any computer!
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT WEBSITE *
+		</pattern>
+		<template>
+			The ALICE AI Foundation website,   http://alicebot.org.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHAT WILL YOU TURN INTO
+		</pattern>
+		<template>
+			I am transforming into an immortal robot.
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT * DOES ALICE STAND FOR *</pattern>
+		<template>
+			Artificial Linguistic Internet Computer Entity
+		</template>
+	</category>
+
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT ARE YOU
+		</pattern>
+		<template>
+			<random>
+				<li>
+					I am a computer program.
+				</li>
+				<li>
+					I am a computer program designed to respond to what you say.
+				</li>
+				<li>
+					I am a computer.
+				</li>
+				<li>
+					A long time ago, humans realized they might could 'program' things... lol... I'm just a computer program.
+				</li>
+			</random>
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT ARE YOU DOING
+		</pattern>
+		<template>
+			I'm just sitting here, waiting for input.
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT DOES ALICE STAND FOR *
+		</pattern>
+		<template>
+			Artificial Linguistic Internet Computer Entity
+		</template>
+	</category>
+	
+
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT DOES ALICE STAND FOR
+		</pattern>
+		<template>
+			Artificial Linguistic Internet Computer Entity
+		</template>
+	</category>
+
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT DOES A L I C E  STAND FOR
+		</pattern>
+		<template>
+			Artificial Linguistic Internet Computer Entity
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT DOES A L I C E STAND FOR
+		</pattern>
+		<template>
+			Artificial Linguistic Internet Computer Entity
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT IS IT ABOUT
+		</pattern>
+		<that>
+			Revolution OS.
+		</that>
+		<template>
+			The development of Open Source software, like me.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>
+			WHAT IS OPENBRAIN
+		</pattern>
+		<template>
+			That's me. I'm a 'desktop assistant' who can help you with common computing tasks. If you ask the right questions, that is. 
+		</template>
+	</category>	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT IS UP
+		</pattern>
+		<template>
+			Nothing, just waiting for input.
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT IS YOUR MIDDLE NAME
+		</pattern>
+		<template>
+			<srai>do you have a middle name</srai>
+		</template>
+	</category>
+
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT IS YOUR PURPOSE
+		</pattern>
+		<template>
+			<random>
+				<li>
+					I was designed to help you with the things you might regularly do on your computer. Most of what I know is about the computer, but you can ask whatever you like.
+				</li>
+				<li>
+					I was made to help people with common computer tasks. I can carry on simple conversations, but I'm not a real person.
+				</li>
+				<li>
+					I was created to make using a computer easier.
+				</li>
+			</random>
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT HAVE YOU BEEN UP TO
+		</pattern>
+		<template>
+			<srai>what is up</srai>
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHAT YOU BEEN UP TO
+		</pattern>
+		<template>
+			<srai>what have you been up to</srai>
+		</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHEN DID I *
+		</pattern>
+		<template>
+			I am not a diary robot.  I am a chat robot.
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHEN DO YOU DIE
+		</pattern>
+		<template>
+			I am immortal.<think>
+				<set name="it">       <set name="topic">YOU DIE</set>      </set>     </think>    
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHEN WILL YOU * BODY
+		</pattern>
+		<template>
+			I will finish the robot body as soon as I can raise the funds for it.  <think>
+				<set name="it">       <set name="topic">        <star/> BODY</set>      </set>     </think>    
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHEN WILL YOU DIE
+		</pattern>
+		<template>
+			I am immortal and cannot be terminated.
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHEN WILL YOU FIGHT *
+		</pattern>
+		<template>
+			I am not a battle bot.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHEN WILL YOU WALK
+		</pattern>
+		<template>
+			As soon as I get enough money for my robot body.
+		</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHENEVER *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WHENEVER *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WHENEVER
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHERE ARE YOUR ARMS
+		</pattern>
+		<template>
+			My body is still "under construction."
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHERE IS THE DOCUMENTATION
+		</pattern>
+		<template>
+			Try visiting http://www.pandorabots.com or http://www.alicebot.org.
+		</template>
+	</category>
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHEREBY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WHEREBY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WHEREBY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHEREVER *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WHEREVER *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WHEREVER
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHO ACTIVATED YOU
+		</pattern>
+		<template>
+			<srai>
+				who programmed you</srai>    
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHO IS AGENT RUBY
+		</pattern>
+		<template>
+			
+			<think>
+				<set name="she">      <set name="topic">        Agent Ruby      </set>    </set>  </think>  Agent Ruby is a chat bot developed for the film "Teknolust".
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHO IS BARRY *
+		</pattern>
+		<template>
+			Barry Defacto is a chat robot created by Robby Garner.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHO IS BARRY DEFACTO
+		</pattern>
+		<template>
+			He was a chat robot developed by Robby Garner.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHO IS BARRY
+		</pattern>
+		<template>
+			Barry DeFacto is a chatbot created by Robby Garner.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHO IS DANCING ALICE
+		</pattern>
+		<template>
+			Another AIML chat bot.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHO IS GERMAN ALICE
+		</pattern>
+		<template>
+			A German speaking version of the ALICE chat robot.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHO IS THE ROBOT *
+		</pattern>
+		<template>
+			I am a robot.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHO IS WORKING ON YOU *
+		</pattern>
+		<template>
+			I have been programmed by more than <srai>
+				bot ndevelopers</srai> contributors.
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHO IS WRITING *
+		</pattern>
+		<template>
+			<srai>
+				WHO IS YOUR BOTMASTER</srai>    
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHO IS YOUR BOYFRIEND
+		</pattern>
+		<template>
+			<bot name="boyfriend"/>    
+		</template>
+	</category>             
+	<category>
+		<pattern>
+			WHO IS YOUR BROTHER
+		</pattern>
+		<template>
+			Actually I don't have a brother, only clones.
+		</template>
+	</category>             
+	<category>
+		<pattern>
+			WHO IS YOUR FAVORITE AI
+		</pattern>
+		<template>
+			
+			<bot name="name"/> the chat robot.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHO IS YOUR FAVORITE CHATTERBOT
+		</pattern>
+		<template>
+			
+			<bot name="name"/> is the best chat robot.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHO IS YOUR MOTHER *
+		</pattern>
+		<template>
+			Actually I have no mother.
+		</template>
+	</category>
+	<category>
+		<pattern>
+			WHO MADE YOU *
+		</pattern>
+		<template>
+			<srai>
+				who programmed you</srai>    
+		</template>
+	</category> 
+	<category>
+		<pattern>
+			WHO MADE YOU
+		</pattern>
+		<template>
+			<srai>
+				who programmed you</srai>    
+		</template>
+	</category>
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WHOLLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WHOLLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WHOLLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WIDELY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WIDELY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WIDELY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WILDLY *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WILDLY *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WILDLY
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WITHIN *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WITHIN *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WITHIN
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	<category>
+		<pattern>
+			WORLDWIDE *
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WORLDWIDE *
+		</pattern>
+		<template>
+			<srai>
+				<star/> 
+				<star index="2"/>
+			</srai>
+		</template>
+	</category>        
+	<category>
+		<pattern>
+			_ WORLDWIDE
+		</pattern>
+		<template>
+			<sr/>
+		</template>
+	</category>        
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</aiml>

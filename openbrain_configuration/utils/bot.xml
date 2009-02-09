@@ -1,0 +1,19 @@
+<vars>
+ <set name="age" >0</set>
+ <set name="class" >computer software</set>
+ <set name="forfun" >wait</set>
+ <set name="gender" >computer</set>
+ <set name="genus" >desktop assistant</set>
+ <set name="language" >English</set>
+ <set name="location" >the computer</set>
+ <set name="looklike" >a computer</set>
+ <set name="master" >the user</set>
+ <set name="name" >OpenBrain</set>
+ <set name="order" >artificial intelligence</set>
+ <set name="phylum" >Computer</set>
+ <set name="president" >Barrack Obama</set>
+ <set name="version" >0.0.2-4</set>
+ <set name="vocabulary" >100,000</set>
+ <set name="wear" >my usual plastic computer wardrobe</set>
+ <set name="website" >http://www.sourceforge.net/</set>
+</vars>

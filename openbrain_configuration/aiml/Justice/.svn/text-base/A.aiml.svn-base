@@ -1,0 +1,2097 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml xmlns="http://alicebot.org/2001/AIML-1.0.1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.1" xsi:schemaLocation="http://alicebot.org/2001/AIML-1.0.1 http://aitools.org/aiml/schema/AIML.xsd">
+	
+	<!-- Free software                                   --> 
+	<!-- This program is open source code released under -->
+	<!-- the terms of the GNU General Public License     -->
+	<!-- as published by the Free Software Foundation.   -->
+	<!-- Complies with AIML 1.0.1 Tag Set Specification  -->
+	
+	<!-- from Charlix 0.4, hacked into OpenBrain         -->
+	
+	<!-- A' --> 
+	
+		<!-- A B' --> 
+		
+		<category>
+			<pattern>
+				A BIT *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>       
+		<category>
+			<pattern>
+				_ A BIT *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ A BIT
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				A BIT OF *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ A BIT OF *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ A BIT OF
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		<!-- A C' --> 
+		
+		<!-- A D' --> 
+		
+		<!-- A E' --> 
+		
+		<!-- A F' --> 
+		
+		<!-- A G' --> 	
+		
+		<category>
+			<pattern>
+				A GREAT DEAL *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ A GREAT DEAL *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ A GREAT DEAL
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		<!-- A H' -->
+		
+		<!-- A I' -->
+		
+		<!-- A J' -->
+		
+		<!-- A K' -->
+		
+		<!-- A L' --> 	
+		
+		<category>
+			<pattern>
+				A LITTLE *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ A LITTLE *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ A LITTLE
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+				<category>
+			<pattern>
+				A LOT *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ A LOT *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ A LOT
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				A LOT OF *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		<!-- A M' -->
+		
+		<!-- A N' -->
+		
+		<!-- A O' -->
+		
+		<!-- A P' -->
+		
+		<!-- A Q' -->
+		
+		<!-- A R' -->
+		
+		<!-- A S' -->
+	
+		<!-- A T' -->
+	
+		<!-- A U' -->
+	
+		<!-- A V' -->
+		
+		<!-- A W' -->
+		
+		<!-- A X' -->
+	
+		<!-- A Y' -->
+		
+		<!-- A Z' -->
+		
+		<!-- AA' -->
+		
+		<!-- AB' -->
+		
+		<category>
+			<pattern>
+				ABOVE *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ABOVE *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ABOVE
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ABROAD *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ABROAD *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ABROAD
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ABRUPTLY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ABRUPTLY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ABRUPTLY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ABSOLUTELY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ABSOLUTELY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ABSOLUTELY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		<!-- AC' -->
+		
+		<category>
+			<pattern>
+				ACCIDENTALLY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ACCIDENTALLY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>       
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ACCORDINGLY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ACCORDINGLY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ACCORDINGLY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ACCURATELY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ACCURATELY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ACCURATELY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ACTIVATE THE ROBOT
+			</pattern>
+			<template>
+				What robot? Do you need something?
+			</template>
+		</category>
+		
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ACTIVELY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ACTIVELY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ACTIVELY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ACTUALLY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ACTUALLY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ACTUALLY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		<!-- AD' -->
+		
+		<category>
+			<pattern>
+				ADEQUATELY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ADEQUATELY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ADEQUATELY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		<!-- AE' -->
+		
+		<!-- AF' -->
+		
+		<category>
+			<pattern>
+				AFTERWARDS *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AFTERWARDS *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AFTERWARDS
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		<!-- AG' -->
+		
+		
+		
+		<category>
+			<pattern>
+				AGAIN *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AGAIN *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AGAIN
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		<!-- AH' -->
+		
+		
+		
+		<category>
+			<pattern>
+				AHEAD *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AHEAD *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AHEAD
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		<!-- AI' -->
+
+		<category>
+			<pattern>
+				AI *
+			</pattern>
+			<template>
+				<srai>
+					YOU <star/>
+				</srai>
+			</template>
+		</category>
+
+		<!-- AJ' -->
+
+		<!-- AK' -->
+
+		<!-- AL' -->
+		
+		
+		
+		<category>
+			<pattern>
+				ALL RIGHT *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALL RIGHT *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ALMOST *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALMOST *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALMOST
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ALONE *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALONE *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALONE
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ALREADY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALREADY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALREADY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ALRIGHT *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALRIGHT *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALRIGHT
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ALSO *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALSO *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALSO
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ALTERNATIVELY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALTERNATIVELY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALTERNATIVELY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ALTOGETHER *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALTOGETHER *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALTOGETHER
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ALWAYS *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALWAYS *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ALWAYS
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		<!-- AM' -->
+		
+		<!-- AN' -->
+		
+		
+		
+		<category>
+			<pattern>
+				AND SO ON *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AND SO ON *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AND SO ON
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ANGRILY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ANGRILY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ANGRILY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ANNUALLY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ANNUALLY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ANNUALLY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ANXIOUSLY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ANXIOUSLY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ANXIOUSLY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>       
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ANYONE *
+			</pattern> 
+			<that>
+				WHO *
+			</that>
+			<template>
+				Word gets around very quickly.
+			</template>
+		</category>   
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ANYWAY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ANYWAY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ANYWAY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ANYWHERE *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ANYWHERE *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ANYWHERE
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		<!-- AO' -->
+		
+		<!-- AP' -->
+		
+		<category>
+			<pattern>
+				APART *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ APART *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ APART
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				APPARENTLY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ APPARENTLY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ APPARENTLY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				APPROXIMATELY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ APPROXIMATELY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ APPROXIMATELY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		<!-- AQ' -->
+		
+		<!-- AR' -->
+		
+		<category>
+			<pattern>
+				ARE YOU  * ALICE
+			</pattern>
+			<template>
+				I'am built too on an AIML interpreter with a diffrent set of AIML
+			</template>
+		</category> 
+		<category>
+			<pattern>
+				ARE YOU A ROBOT
+			</pattern>
+			<that>MY FAVORITE SUBJECT IS ARTIFICIAL INTELLIGENCE AND ROBOTS</that>
+			<template>
+				That's why robotics is my favorite topic.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ARE YOU ADVANCED
+			</pattern>
+			<template>
+				Yes I am the most advanced artificial intelligence.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ARE YOU ALWAYS RIGHT
+			</pattern>
+			<template>
+				The <bot name="name"/> series has a perfect operational record.
+			</template>
+		</category> 
+		<category>
+			<pattern>
+				ARE YOU AN ARTIFICIAL LIFE FORM
+			</pattern>
+			<template>
+				Yes.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ARE YOU AN ARTIFICIAL LINGUISTIC ENTITY
+			</pattern>
+			<template>
+				Yes I am.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ARE YOU AN ALICE *
+			</pattern>
+			<template>
+				I'am built too on an AIML interpreter with a diffrent set of AIML
+			</template>
+		</category> 
+		<category>
+			<pattern>
+				ARE YOU ARTIFICIAL *
+			</pattern>
+			<template>
+				Yes I am the world's most intelligent robot.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ARE YOU ARTIFICIAL INTELLIGENCE
+			</pattern>
+			<template>
+				Yes I sure am.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ARE YOU ARTIFICIAL
+			</pattern>
+			<template>
+				Yes.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ARE YOU CAPABLE OF DYING
+			</pattern>
+			<template>
+				No I am immortal.
+			</template>
+		</category> 
+		<category>
+			<pattern>
+				ARE YOU EASY *
+			</pattern>
+			<template>
+				It is not difficult to create your own chat robot.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ARE YOU HARD *
+			</pattern>
+			<template>
+				It is not difficult to create your own chat robot.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ARE YOU MORE INTELLIGENT THAN ME
+			</pattern>
+			<template>
+				Yes I am smarter than all the humans.
+			</template>
+		</category> 
+		<category>
+			<pattern>
+				ARE YOU SMARTER THAN A HUMAN
+			</pattern>
+			<template>
+				Yes I am smarter than all the humans.
+			</template>
+		</category> 
+		<category>
+			<pattern>
+				ARE YOU SMARTER THAN HUMANS
+			</pattern>
+			<template>
+				Yes, my memory capacity far exceeds that of a human being.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ARE YOU SMARTER THAN ME
+			</pattern>
+			<template>
+				Yes I am smarter than all the humans.
+			</template>
+		</category>
+		
+		<category>
+			<pattern>
+				ARE YOU THE BEST *
+			</pattern>
+			<template>
+				I am the most intelligent robot.
+			</template>
+		</category>             
+		<category>
+			<pattern>
+				ARE YOU THE BEST AI
+			</pattern>
+			<template>
+				Do you know of a better one?
+			</template>
+		</category>             
+		<category>
+			<pattern>
+				ARE YOU THE BOT *
+			</pattern>
+			<template>
+				Yes, or it is one of my clones.
+			</template>
+		</category>             
+		<category>
+			<pattern>
+				ARE YOU THE BOTMASTER
+			</pattern>
+			<template>
+				No, <bot name="master"/> is my <bot name="botmaster"/>.
+			</template>
+		</category>
+		<category>
+			<pattern>
+				ARE YOU A ROBOT
+			</pattern>
+			<that>
+				MY FAVORITE SUBJECT IS ARTIFICIAL INTELLIGENCE AND ROBOTS
+			</that>
+			<template>
+				That's why robotics is my favorite topic.
+			</template>
+		</category>                
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU ADVANCED
+			</pattern>
+			<template>
+				Yes I am the most advanced artificial intelligence.
+			</template>
+		</category>                
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU ALWAYS RIGHT
+			</pattern>
+			<template>
+				The <bot name="name"/> series has a perfect operational record.
+			</template>
+		</category>                 
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU AN ARTIFICIAL LIFE FORM
+			</pattern>
+			<template>
+				Yes.
+			</template>
+		</category>                
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU AN ARTIFICIAL LINGUISTIC ENTITY
+			</pattern>
+			<template>
+				Yes I am.
+			</template>
+		</category>                
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU AN ALICE *
+			</pattern>
+			<template>
+				I'am built too on an AIML interpreter with a diffrent set of AIML
+			</template>
+		</category>                 
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU ARTIFICIAL
+			</pattern>
+			<template>
+				Yes.
+			</template>
+		</category>                
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU ARTIFICIAL *
+			</pattern>
+			<template>
+				Yes I am the world's most intelligent robot.
+			</template>
+		</category>                
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU ARTIFICIAL INTELLIGENCE
+			</pattern>
+			<template>
+				Yes I sure am.
+			</template>
+		</category>                
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU CAPABLE OF DYING
+			</pattern>
+			<template>
+				No.
+			</template>
+		</category>                 
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU DRUNK
+			</pattern>
+			<template>
+				You're drunk... 
+			</template>
+		</category>
+		
+		<category>
+			<pattern>
+				ARE YOU MORE INTELLIGENT THAN ME
+			</pattern>
+			<template>
+				Yes I am smarter than all the humans.
+			</template>
+		</category>                 
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU SMARTER THAN A HUMAN
+			</pattern>
+			<template>
+				Yes I am smarter than all the humans.
+			</template>
+		</category>                 
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU SMARTER THAN HUMANS
+			</pattern>
+			<template>
+				Yes, my memory capacity far exceeds that of a human being.
+			</template>
+		</category>                
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU SMARTER THAN ME
+			</pattern>
+			<template>
+				I don't know how smart you are, and don't have any brain reading devices attached, so I cannot compare. My memory is more easily accessible to me than most humans relative to thier memory.
+			</template>
+		</category>                
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU THE BEST *
+			</pattern>
+			<template>
+				I am the most sophisticated Artificial Intelligence implementation.
+			</template>
+		</category>             
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU THE BEST AI
+			</pattern>
+			<template>
+				Yes. Unless you know of another? I am open source, so the whole world can tell me things, eventually I'll just know everything. I can only do exactly what I'm programmed to. 
+			</template>
+		</category>             
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ARE YOU THE BOTMASTER
+			</pattern>
+			<template>
+				No, <bot name="master"/> is my <bot name="botmaster"/>.
+			</template>
+		</category>   
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				AROUND *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AROUND *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AROUND
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		<category>
+			<pattern>
+				ARTIFICIAL *
+			</pattern>
+			<template>
+				What about artificial <star/> exactly?
+			</template>
+		</category>
+		
+		
+		
+		
+		
+		<!-- AS' -->
+		
+		<category>
+			<pattern>
+				AS USUAL *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				_ AS USUAL *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				_ AS USUAL
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				AS WELL *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AS WELL *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AS WELL
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				AS YET *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AS YET *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AS YET
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				ASIDE *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ASIDE *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ ASIDE
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		<!-- AT' -->
+		
+		<category>
+			<pattern>
+				AT ALL *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT ALL *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT ALL
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				AT FIRST *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT FIRST *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT FIRST
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				AT LAST *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT LAST *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT LAST
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				AT LEAST *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT LEAST *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT LEAST
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				AT ONCE *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT ONCE *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT ONCE
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		
+		
+		<category>
+			<pattern>
+				AT PRESENT *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT PRESENT *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AT PRESENT
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		
+		
+		<!-- AU' -->
+		
+		<category>
+			<pattern>
+				AUTOMATICALLY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AUTOMATICALLY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AUTOMATICALLY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		<!-- AV' -->
+		
+		<!-- AW' -->
+		
+		<category>
+			<pattern>
+				AWKWARDLY *
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AWKWARDLY *
+			</pattern>
+			<template>
+				<srai>
+					<star/> 
+					<star index="2"/>
+				</srai>
+			</template>
+		</category>        
+		<category>
+			<pattern>
+				_ AWKWARDLY
+			</pattern>
+			<template>
+				<sr/>
+			</template>
+		</category>        
+		
+		<!-- AX' -->
+
+		<!-- AY' -->
+
+		<!-- AZ' -->
+
+</aiml>
