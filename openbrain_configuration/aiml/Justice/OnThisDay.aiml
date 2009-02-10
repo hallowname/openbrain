@@ -45,7 +45,7 @@
 </category>   
 
 <category><pattern>ON THIS DAY</pattern><template>On this day in history <system>date +%B %d</system>:<![CDATA[<br/>]]><![CDATA[<br/>]]>
-<srai><system>date +%B %d</system></srai></template></category>   
+<srai><system>date +%B</system> <system>date +%d</system></srai></template></category>   
 
 <category>
 <pattern>JANUARY 01</pattern>

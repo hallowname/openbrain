@@ -2,10 +2,10 @@ changelog
 ----------
 
 02/7/09 - Stable "End User Release" (0.0.2.6)
-	  + aiml parser now subclasses qthread like it should
-	  + execution and process reporting are done the qt4 way now
+	  + aiml parser now subclasses qthread
+	  + execution is qprocess'd now
 	  + gui fixes
-	  + more braindata
+	  + more braindata++
 	  + new progressbar (Plasma::Slider)
 	  + more work on aimlparser
 

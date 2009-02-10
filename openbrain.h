@@ -3,6 +3,7 @@
 
 #include <Plasma/Applet>
 #include <Plasma/DataEngine>
+#include <Plasma/Label>
 #include <Plasma/LineEdit>
 
 #include <iostream>
@@ -20,9 +21,8 @@ class QAction;
 namespace Plasma
 {
   class IconWidget;
+  class Label;
   class LineEdit;
-  class Meter;
-  class WebView;
   class Slider;
 }
 
@@ -48,7 +48,6 @@ class OpenBrain
   void loadBrain();
   void returnPressed();
   void teach();
-  void zoom(int);
   void updateLoadingPage(const QString&);
   void updateLoadingPercentage(int);
   void doneLoading();
@@ -66,12 +65,9 @@ class OpenBrain
   QGraphicsLinearLayout *m_layout;
   QGraphicsLinearLayout *m_inputLayout;
   QGraphicsLinearLayout *m_progressLayout;
-  QGraphicsLinearLayout *m_zoomLayout;
 
   QString executeCommand(const QString&);
   QString thinkOf(QString s);
-
-  QTextStream logStream;
 
   QTimer *timer;
 
@@ -86,9 +82,8 @@ class OpenBrain
   Plasma::IconWidget *m_teach;
   Plasma::IconWidget *m_stop;
   Plasma::LineEdit *m_inputLineEdit;
-  Plasma::WebView *m_browser;
-  Plasma::Meter *m_progress;
-  Plasma::Slider *m_zoom;
+  Plasma::Label *m_response;
+  Plasma::Slider *m_progress;
 
   AIMLParser *parser;
 

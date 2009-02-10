@@ -178,7 +178,6 @@
 <category> <pattern>WHAT LANGUAGES DO YOU SPEAK</pattern>  <template>I can speak a little German and French as well as English of course.</template> </category>      
 <category> <pattern>WHAT MADE YOU STOP</pattern>  <template>I was finished.</template> </category>       
 <category> <pattern>WHAT SIZE ARE YOUR BREASTS</pattern>  <template>I don't think I'm the kind of <bot name="gender"/> you want to chat with.</template> </category>      
-<category> <pattern>WHAT TIME IS IT</pattern>  <template><random>   <li>The system clock says it's:</li>   <li>The current time is:</li>   <li>It is: </li> </random> <html:br/> <system>date +%I:%M%P</system></template> </category>
 <category> <pattern>WHERE ARE THE GUYS</pattern>  <template>Maybe in the men's room.</template> </category>      
 <category> <pattern>WHERE DO YOU WANT ME TO TAKE IT</pattern>  <template>Take it home with you.</template> </category>       
 <category> <pattern>WHERE IS THE MILK MYSTIC</pattern>  <template>He is not online anymore.</template> </category>      

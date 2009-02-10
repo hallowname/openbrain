@@ -2,11 +2,14 @@
 
 #include <QAction>
 #include <QDir>
+#include <QFile>
 #include <QGraphicsLinearLayout>
 #include <QGraphicsProxyWidget>
 #include <QGraphicsSceneMouseEvent>
+#include <QLabel>
 #include <QMessageBox>
 #include <QProcess>
+#include <QTextStream>
 #include <QTimer>
 #include <QWebFrame>
 
@@ -15,11 +18,9 @@
 #include <KIconLoader>
 
 #include <Plasma/IconWidget>
+#include <Plasma/Label>
 #include <Plasma/LineEdit>
-#include <Plasma/Meter>
 #include <Plasma/Slider>
-#include <Plasma/TreeView>
-#include <Plasma/WebView>
 
 #include "openbrain.h"
 
@@ -33,7 +34,7 @@ OpenBrain::OpenBrain(QObject *parent, const QVariantList &args)
   setBackgroundHints(TranslucentBackground);
 
   m_layout = 0;
-  resize(230,180);
+  resize(240,200);
 }
 
 void OpenBrain::setupConnections()
@@ -43,7 +44,6 @@ void OpenBrain::setupConnections()
   connect(m_goAction, SIGNAL(triggered()), this, SLOT(returnPressed()));
   connect(m_homeAction, SIGNAL(triggered()), this, SLOT(displayHome()));
   connect(m_inputLineEdit, SIGNAL(returnPressed()), this, SLOT(returnPressed()));
-  connect(m_zoom, SIGNAL(sliderMoved(int)), this, SLOT(zoom(int)));
   connect(timer, SIGNAL(timeout()), this, SLOT(loadBrain()));
 }
 
@@ -52,22 +52,22 @@ void OpenBrain::init()
   KConfigGroup cg = config();
 
   QSizePolicy expanding_policy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+  QSizePolicy minimal_policy(QSizePolicy::Expanding, QSizePolicy::Maximum);
 
   m_layout = new QGraphicsLinearLayout(Qt::Vertical);
   m_inputLayout = new QGraphicsLinearLayout(Qt::Horizontal);
-  m_zoomLayout = new QGraphicsLinearLayout(Qt::Horizontal);
   m_progressLayout = new QGraphicsLinearLayout(Qt::Horizontal);
 
   m_inputLineEdit = new Plasma::LineEdit(this);
 
-  m_browser = new Plasma::WebView(this);
-  m_browser->setSizePolicy(expanding_policy);
+  m_response = new Plasma::Label(this);
 
-  m_zoom = new Plasma::Slider(this);
-  m_zoom->setMaximum(100);
-  m_zoom->setMinimum(0);
-  m_zoom->setValue(50);
-  m_zoom->setOrientation(Qt::Horizontal);
+  m_progress = new Plasma::Slider(this);
+  m_progress->setMaximum(100);
+  m_progress->setMinimum(0);
+  m_progress->setValue(50);
+  m_progress->setOrientation(Qt::Horizontal);
+  m_progress->setSizePolicy(minimal_policy);
 
   m_inputLayout->addItem(m_inputLineEdit);
 
@@ -77,14 +77,18 @@ void OpenBrain::init()
   m_home = addTool("go-home", m_inputLayout);
   m_homeAction = m_home->action();
 
-  m_zoomLayout->addItem(m_zoom);
+  m_progressLayout->addItem(m_progress);
 
   m_layout->addItem(m_inputLayout);
-  m_layout->addItem(m_browser);
-  m_layout->addItem(m_zoomLayout);
+  m_layout->addItem(m_response);
+  m_layout->addItem(m_progressLayout);
+
+  m_response->nativeWidget()->setSizePolicy(expanding_policy);
+  m_response->nativeWidget()->setWordWrap(true);
+  m_response->nativeWidget()->setTextInteractionFlags(Qt::NoTextInteraction);
+  m_response->nativeWidget()->setAlignment(Qt::AlignCenter);
 
   setLayout(m_layout);
-
   setupConnections();
 
   if (QDir(QDir::homePath() + "/.openbrain").exists())
@@ -148,16 +152,22 @@ OpenBrain::~OpenBrain()
 
 void OpenBrain::returnPressed()
 {
-  if (m_inputLineEdit->text().contains("?"))
   m_inputLineEdit->setText(m_inputLineEdit->text().replace("?", ""));
-  m_browser->setHtml("<html><body bgcolor=black><font color=white>" + thinkOf(parser->getResponse(m_inputLineEdit->text())) + "</font></body></html>");
+  m_inputLineEdit->setText(m_inputLineEdit->text().replace(".", ""));
+  m_inputLineEdit->setText(m_inputLineEdit->text().replace(",", ""));
+  m_inputLineEdit->setText(m_inputLineEdit->text().replace("/", ""));
+  m_response->nativeWidget()->setText(thinkOf(parser->getResponse(m_inputLineEdit->text())));
+
+  QFile f(QDir::homePath() + "/.openbrain/send_to_author");
+  QTextStream out(&f);
+  if (f.open(QIODevice::Append))
+    out << m_inputLineEdit->text() << "\n";
+    out << m_response->text() << "\n\n";
+
+  f.close();
+
   m_inputLineEdit->setText("");
   m_inputLineEdit->setFocus();
-}
-
-void OpenBrain::zoom(int value)
-{
-  m_browser->mainFrame()->setTextSizeMultiplier((qreal)0.2 + ((qreal)value/(qreal)50));
 }
 
 QString OpenBrain::thinkOf(QString s)
@@ -196,7 +206,7 @@ void OpenBrain::loadBrain()
 
   QDir dir(QDir::homePath() + "/.openbrain/aiml/default");
   QStringList files = dir.entryList(QStringList("*.aiml"));
-  m_zoom->setMaximum(files.count());
+  m_progress->setMaximum(files.count());
   parser->start();
 }
 
@@ -231,18 +241,18 @@ Plasma::IconWidget *OpenBrain::addTool(const QString &iconString, QGraphicsLinea
 
 void OpenBrain::updateLoadingPage(const QString &str)
 {
-  m_browser->setHtml("<html><body bgcolor=black><font color=white>" + str + "</font></body></html>");
+  m_response->nativeWidget()->setText(str);
 }
 
 void OpenBrain::updateLoadingPercentage(int val)
 {
-  m_zoom->setValue(val);
+  m_progress->setValue(val);
 }
 
 void OpenBrain::doneLoading()
 {
-  m_zoom->setMaximum(100);
-  m_zoom->setValue(50);
+  m_progress->setMaximum(100);
+  m_progress->hide();
   m_inputLineEdit->setText("openbrain home display");
   emit returnPressed();
   m_inputLineEdit->setFocus();

@@ -19,9 +19,10 @@
 			KCALC
 		</pattern>
 		<template>
-			Launching KCalc, the KDE Calculator.<system>kcalc</system>
+			KCalc, the KDE Calculator.<system>kcalc</system>
 		</template>
 	</category>
+
 
 
 

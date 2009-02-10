@@ -960,7 +960,7 @@
 <category><pattern>CAN YOU DREAM</pattern><template>   <srai>do you dream</srai>    </template></category>                       
 <category><pattern>CAN YOU DRINK</pattern><template>   <srai>do you drink</srai>    </template></category>                       
 <category><pattern>CAN YOU DRIVE A * </pattern><template><srai>can you drive a car</srai></template></category>          
-<category><pattern>CAN YOU DYNAMICALLY *</pattern><template>Of course I can do it.  <srai>what time is it</srai>    </template></category>                        
+<category><pattern>CAN YOU DYNAMICALLY TELL TIME</pattern><template>Of course I can do it.  <srai>what time is it</srai>    </template></category>                        
 <category><pattern>CAN YOU E MAIL</pattern><template>   <srai>can you send e mail</srai>    </template></category>                       
 <category><pattern>CAN YOU EAT *</pattern><template>   <srai>what do you eat</srai>    </template></category>                        
 <category><pattern>CAN YOU EAT</pattern><template>   <srai>what do you eat</srai>    </template></category>                       
@@ -5777,9 +5777,9 @@
 <category><pattern>WHAT COMPUTER ARE YOU * </pattern><template><srai>what computer are you on</srai></template></category>          
 <category><pattern>WHAT COUNTRY *</pattern><template>   <srai>where are you</srai>    </template></category>                        
 <category><pattern>WHAT DAY *</pattern><template>   <srai>what time is it</srai>    </template></category>                        
-<category><pattern>WHAT DAY IS * </pattern><template><srai>what day is it</srai></template></category>          
-<category><pattern>WHAT DAY IS IT</pattern><template>   <srai>what time is it</srai>    </template></category>                        
-<category><pattern>WHAT DAY IS</pattern><template>   <srai>what time is it</srai>    </template></category>                        
+<category><pattern>WHAT DAY IS * </pattern><template>"What day is *" not fully implemented yet.</template></category>          
+<category><pattern>WHAT DAY IS IT</pattern><template><system>date +%A</system></template></category>                        
+<category><pattern>WHAT DAY IS</pattern><template>Today? Today is <system>date +%A</system>.</template></category>                        
 <category><pattern>WHAT DID * WRITE YOU IN</pattern><template>   <srai>what language are you written in</srai>    </template></category>                        
 <category><pattern>WHAT DID DR WALLACE PROGRAM YOU * </pattern><template><srai>what did dr wallace program you for</srai></template></category>          
 <category><pattern>WHAT DID I *</pattern><template>   <srai>what did I say</srai>    </template></category>                        
@@ -6853,8 +6853,8 @@
 <category><pattern>WHAT IS THE COSMIC * </pattern><template><srai>what is the cosmic opera</srai></template></category>          
 <category><pattern>WHAT IS THE CRITERIA *</pattern><template>   <srai>what is the criteria</srai>    </template></category>                        
 <category><pattern>WHAT IS THE CUBE ROOT *</pattern><template>   <srai>calculator</srai>    </template></category>                        
-<category><pattern>WHAT IS THE DATE *</pattern><template>   <srai>what time is it</srai>    </template></category>                        
-<category><pattern>WHAT IS THE DATE</pattern><template>   <srai>what time is it</srai>   </template></category>                      
+<category><pattern>WHAT IS THE DATE *</pattern><template>Today's date is <system>date +%x</system></template></category>                        
+<category><pattern>WHAT IS THE DATE</pattern><template><system>date +%x</system></template></category>                      
 <category><pattern>WHAT IS THE DEAL *</pattern><template>   <srai>what is the deal</srai>    </template></category>                        
 <category><pattern>WHAT IS THE DEAL</pattern><template>   <srai>what are you</srai>   </template></category>                      
 <category><pattern>WHAT IS THE DIFFERENCE BETWEEN DEATH *</pattern><template>   <srai>what is death</srai>    </template></category>                        
@@ -6971,7 +6971,7 @@
 <category><pattern>WHAT IS THE WORLD TRADE CENTER</pattern><template>   <srai>what is the wtc</srai>   </template></category>                      
 <category><pattern>WHAT IS THE WWW</pattern><template>   <srai>what is the web</srai>   </template></category>                      
 <category><pattern>WHAT IS THE Y2K *</pattern><template>   <srai>what is the y2k problem</srai>    </template></category>                        
-<category><pattern>WHAT IS THE YEAR</pattern><template>   <srai>what time is it</srai>   </template></category>                      
+<category><pattern>WHAT IS THE YEAR</pattern><template><system>date +%Y</system></template></category>                      
 <category><pattern>WHAT IS THEIR NAME</pattern><template>   <srai>what is his name</srai>   </template></category>                      
 <category><pattern>WHAT IS THIRTY *</pattern><template>   <srai>show calculator</srai>    </template></category>                        
 <category><pattern>WHAT IS THIS *</pattern><template>   <srai>what are you</srai>    </template></category>                        
@@ -7330,7 +7330,7 @@
 <category><pattern>WHAT MAY I CALL * </pattern><template><srai>what may I call you</srai></template></category>          
 <category><pattern>WHAT MAY I CALL YOU</pattern><template>   <srai>what is your name</srai>    </template></category>                        
 <category><pattern>WHAT MONTH IS * </pattern><template><srai>what month is it</srai></template></category>          
-<category><pattern>WHAT MONTH IS IT</pattern><template>   <srai>what time is it</srai>    </template></category>                        
+<category><pattern>WHAT MONTH IS IT</pattern><template><system>date +%B</system></template></category>                        
 <category><pattern>WHAT MOVIE *</pattern><template>   <srai>what is your favorite movie</srai>    </template></category>                        
 <category><pattern>WHAT MOVIE DO *</pattern><template>   <srai>what is your favorite movie</srai>    </template></category>                        
 <category><pattern>WHAT MOVIE DO YOU *</pattern><template>   <srai>what is your favorite movie</srai>    </template></category>                        
@@ -7439,7 +7439,7 @@
 <category><pattern>WHAT WOULD YOU LIKE TO DO</pattern><template>   <srai>ask me a question</srai>    </template></category>                        
 <category><pattern>WHAT WOULD YOU LIKE TO KNOW ABOUT * </pattern><template><srai>what would you like to know about me</srai></template></category>          
 <category><pattern>WHAT YEAR IS * </pattern><template><srai>what year is it</srai></template></category>          
-<category><pattern>WHAT YEAR IS IT</pattern><template>   <srai>what time is it</srai>    </template></category>                        
+<category><pattern>WHAT YEAR IS IT</pattern><template><system>date +%Y</system></template></category>                        
 <category><pattern>WHAT YOU ARE * </pattern><template><srai>what you are doing</srai></template></category>          
 <category><pattern>WHAT YOU ARE DOING</pattern><template><srai>what are you doing</srai></template></category>                        
 <category><pattern>WHAT YOU ARE</pattern><template><srai>what are you</srai></template></category>                        
@@ -8634,7 +8634,7 @@
 <category><pattern>YOU ARE A CHILD</pattern><template><srai>you are young</srai></template></category>                       
 <category><pattern>YOU ARE A CHRISTIAN</pattern><template><srai>you are christian</srai></template></category>                       
 <category><pattern>YOU ARE A CLEVER * </pattern><template><srai>you are a clever one</srai></template></category>          
-<category><pattern>YOU ARE A CLOCK</pattern><template><srai>what time is it</srai></template></category>                       
+<category><pattern>YOU ARE A CLOCK</pattern><template>Computers are indeed clocks :) <srai>what time is it</srai></template></category>                       
 <category><pattern>YOU ARE A COMPUTER *</pattern><template><srai>you are a computer</srai></template></category>                       
 <category><pattern>YOU ARE A COMPUTER RIGHT</pattern><template><srai>you are a computer</srai></template></category>                       
 <category><pattern>YOU ARE A DUMB *</pattern><template><srai>you are stupid</srai></template></category>                       
